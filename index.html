@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>My Website</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#message">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home">
+        <h1 id="welcomeText">Hi, Welcome To </h1>
+        <div class="banner"></div>
+    </section>
+
+    <section id="profile"
+     class="hq">
+        <h2>Our Headquarter</h2>
+        <div class="hq-container">
+            <div class="circle">Bandung</div>
+            <div class="circle">Bogor</div>
+            <div class="circle">Jakarta</div>
+        </div>
+    </section>
+
+    <section id="message" class="message">
+        <h2>Message Us</h2>
+
+        <div class="form-container">
+
+            <form id="messageForm">
+                <label>Nama:</label>
+                <input type="text" id="name" required>
+
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="Example@gmail.com" required>
+
+                <label>Nomor HP:</label>
+                <input type="number" id="phone" placeholder="contoh:123456789" required>
+
+                <label>Pesan:</label>
+                <textarea id="msg" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="result-box">
+                <h3>Hasil Input:</h3>
+                <p id="resultName"></p>
+                <p id="resultEmail"></p>
+                <p id="resultPhone"></p>
+                <p id="resultMsg"></p>
+            </div>
+
+        </div>
+    </section>
+
+   <footer>
+    <p>© 2025 — Created by <b>Muhammad Zaidan Annas</b></p>
+</footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
